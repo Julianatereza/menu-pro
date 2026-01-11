@@ -48,7 +48,7 @@ export const TEMPLATES = [
     name: 'Minimalista Moderno',
     tagline: 'Ideal para bares',
     category: 'Bares',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDhFdnaot5e7BZ6423ENFDu2IjciSqPnHIyiQHN1kmD30IZfkkggYTORQalj3iWkulZ1eg4zfTQP90GxKZcvgMfY2V3jm2nAcCmoizc8-2K2g8e8kl_R_Labl7ccwLKWMFe-zsqZgYaR0FMDHuIRIEmHi8dqjpwhiy3Sw_p0WOwdCit1eHO7A2Sd26uTHZzyO9mBZcHa_QwDfAPh9S0wXpQJ2E0n-vG1JIF7A4RZjBYIqRXF5HjIrPFMZlR0zwcCCQ_EkI3r2mE12c',
+    image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800',
     premium: true,
   },
   {
@@ -56,7 +56,7 @@ export const TEMPLATES = [
     name: 'Rústico Elegante',
     tagline: 'Perfeito para bistrôs',
     category: 'Restaurantes',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5wll62s2CJ7vH8Ggpxg-oBWbAmK0LOrWJDh1a3kkBwnqPb0D-AFWi6087RSoA6gYQA-pMGSApqbGwo_R6Md8gvoeFGuCBEKYlCPpb0-Md9nyD47ZEH_AdwWfi_nr7u-vL4Rq5uxt2EIFoJSjhMTUKNROH3ymjdjxBcW8jZgu3h5ECID7r9cpnP3Sc3Lem21exbThqdfPByogkj6aAy-qw-K6m6e0-cXECicHddYnkftasfLeejOpYxFBckt3dtoKWGAuI6RxZOg8',
+    image: 'https://images.unsplash.com/photo-1550966842-28c4600e608d?auto=format&fit=crop&q=80&w=800',
     premium: false,
   },
   {
@@ -64,7 +64,7 @@ export const TEMPLATES = [
     name: 'Clássico Italiano',
     tagline: 'Especial Pizzarias',
     category: 'Pizzarias',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCbpQsp6iGUdaUdH_mhGnjbq0C6eJ0U8cl0uG8Z1PJswjZehIcY4pOWB6Z5Y_lw5AnmRFnv0OSSfBCQyexSUlj4s4XekvFqxlANKflcTZz6cDYh3n7p1Q1Cp-vM7PW2lgHd-Hm4IesQ8wMNg_T_BYD_C3rjOH0NRnbzTJSMNCmF1ZmqC7aLJktliXKaQfE8uKf0ehDwICljOfnbf7y6-t5onkt35cVfgge61nazlbnfP5xa62t6aQqbkQ5ZZY1hh1RCyS_70-CBuqg',
+    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800',
     new: true,
   },
   {
@@ -72,7 +72,7 @@ export const TEMPLATES = [
     name: 'Gourmet Premium',
     tagline: 'Alta Gastronomia',
     category: 'Restaurantes',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCeCZ80zqTVf0FJcwpc95VvzHnFL3v-1x3IHjiW9Nzkq_YtMuOUGq0GBonYyvG5JGl9Wmf17Ctys06iCGlcFcJ8BfqN15taW-FEq7KSGsqBPzenZZAk1a4NjbZzUA9ViCL-D8rBXDVU3vDdEXTEIt-OB9Nykl1BrvY8GYTovpJ_f0mz4cSN3uHn2WeIauveA7YXbfm_hmvKM955vpktyN4_XC5E5M1m8A6f2gjjTc_wuTB3montQQCwPtj0ufHmDV5-ZuCkll8QqJ4',
+    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800',
     premium: true,
   },
   {

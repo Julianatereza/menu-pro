@@ -16,6 +16,6 @@
   },
   "scripts": {
     "start": "serve .",
-    "build": "mkdir -p public && cp index.html index.tsx App.tsx types.ts constants.tsx geminiService.ts metadata.json public/ && cp -r screens public/ 2>/dev/null || true"
+    "build": "mkdir -p public && cp index.html metadata.json public/ && cp index.tsx App.tsx types.ts constants.tsx geminiService.ts public/ && cp -r screens public/ 2>/dev/null || true"
   }
 }
