@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Plataforma de criação de cardápios profissionais",
   "main": "index.html",
+  "type": "module",
   "dependencies": {
     "stripe": "^14.0.0",
     "@google/genai": "^1.35.0",
@@ -15,6 +16,6 @@
   },
   "scripts": {
     "start": "serve .",
-    "build": "echo 'No build step required for simple ESM app'"
+    "build": "mkdir -p public && cp index.html index.tsx App.tsx types.ts constants.tsx geminiService.ts metadata.json public/ && cp -r screens public/ 2>/dev/null || true"
   }
 }
