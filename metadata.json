@@ -1,0 +1,7 @@
+{
+  "name": "Menu Pro - Criador de Cardápios",
+  "description": "Uma plataforma completa para donos de restaurantes criarem, editarem e personalizarem cardápios digitais profissionais com templates modernos e inteligência artificial.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

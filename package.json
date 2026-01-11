@@ -1,0 +1,20 @@
+
+{
+  "name": "menu-pro",
+  "version": "1.0.0",
+  "description": "Plataforma de criação de cardápios profissionais",
+  "main": "index.html",
+  "dependencies": {
+    "stripe": "^14.0.0",
+    "@google/genai": "^1.35.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step required for simple ESM app'"
+  }
+}
