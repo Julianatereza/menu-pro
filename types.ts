@@ -4,6 +4,7 @@ export interface MenuItem {
   name: string;
   description: string;
   price: string;
+  imageUrl?: string;
 }
 
 export interface Category {
@@ -30,4 +31,4 @@ export interface MenuData {
   isPremium: boolean;
 }
 
-export type AppView = 'landing' | 'templates' | 'editor' | 'design' | 'preview' | 'checkout' | 'qrcode';
+export type AppView = 'landing' | 'dashboard' | 'templates' | 'editor' | 'design' | 'preview' | 'checkout' | 'qrcode';
