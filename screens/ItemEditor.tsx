@@ -113,7 +113,6 @@ const ItemEditor: React.FC<Props> = ({ menuData, setMenuData, onExport }) => {
                   
                   <div className="flex flex-col gap-4">
                     <div className="flex gap-4 items-start">
-                       {/* Image Link Support */}
                        <div className="flex flex-col gap-2 w-24">
                           <div className={`size-24 rounded-xl border border-dashed flex items-center justify-center overflow-hidden bg-gray-50 dark:bg-black/20 ${item.imageUrl ? 'border-transparent' : 'border-gray-300 dark:border-white/10'}`}>
                             {item.imageUrl ? (
@@ -134,12 +133,15 @@ const ItemEditor: React.FC<Props> = ({ menuData, setMenuData, onExport }) => {
                             />
                           </label>
                           <label className="flex flex-col">
-                            <p className="text-gray-700 dark:text-gray-300 text-[10px] font-black uppercase tracking-widest pb-1.5">Link da Imagem</p>
+                            <div className="flex items-center justify-between pb-1.5">
+                              <p className="text-gray-700 dark:text-gray-300 text-[10px] font-black uppercase tracking-widest">Link da Imagem</p>
+                              <span className="text-[8px] text-gray-400">Cole links .jpg ou .png</span>
+                            </div>
                             <input 
                               value={item.imageUrl || ''}
                               onChange={(e) => updateItem(cat.id, item.id, 'imageUrl', e.target.value)}
                               className="w-full h-11 px-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-[10px]"
-                              placeholder="Cole o link da foto aqui..."
+                              placeholder="https://exemplo.com/foto-do-prato.jpg"
                             />
                           </label>
                        </div>
@@ -149,15 +151,15 @@ const ItemEditor: React.FC<Props> = ({ menuData, setMenuData, onExport }) => {
                       <label className="flex flex-col flex-[2] relative">
                         <div className="flex items-center justify-between pb-1.5">
                           <p className="text-gray-700 dark:text-gray-300 text-[10px] font-black uppercase tracking-widest">Descrição</p>
-                          <button onClick={() => handleMagicSuggest(cat.id, item)} className="text-primary flex items-center gap-1 text-[9px] font-bold uppercase">
-                            <span className="material-symbols-outlined text-xs font-fill">auto_awesome</span> IA
+                          <button onClick={() => handleMagicSuggest(cat.id, item)} className="text-primary flex items-center gap-1 text-[9px] font-bold uppercase hover:opacity-80 transition-opacity">
+                            <span className="material-symbols-outlined text-xs font-fill">auto_awesome</span> Gerar com IA
                           </button>
                         </div>
                         <textarea 
                           value={item.description}
                           onChange={(e) => updateItem(cat.id, item.id, 'description', e.target.value)}
                           className="w-full h-24 p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-xs resize-none"
-                          placeholder="Ingredientes..."
+                          placeholder="Ingredientes e modo de preparo..."
                         />
                       </label>
                       <label className="flex flex-col flex-1">
