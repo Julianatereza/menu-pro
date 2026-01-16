@@ -10,20 +10,18 @@ interface Props {
 }
 
 const Dashboard: React.FC<Props> = ({ menuData, onEdit, onPreview, onTemplates }) => {
-  // O link oficial é o domínio da vercel, mas usamos o origin para o preview
-  const publicLink = window.location.origin.includes('vercel.app') 
-    ? window.location.origin 
-    : 'https://menu-pro-737c.vercel.app';
+  // Detecta automaticamente a URL onde o site está rodando
+  const publicLink = typeof window !== 'undefined' ? window.location.origin : 'https://menu-pro-beige.vercel.app';
 
   const stats = [
-    { label: 'Pratos Ativos', value: menuData.categories.reduce((acc, cat) => acc + cat.items.length, 0), icon: 'restaurant', color: 'text-orange-500' },
+    { label: 'Pratos Ativos', value: menuData?.categories?.reduce((acc, cat) => acc + (cat?.items?.length || 0), 0) || 0, icon: 'restaurant', color: 'text-orange-500' },
     { label: 'Visualizações', value: '0', icon: 'monitoring', color: 'text-blue-500' },
-    { label: 'Categorias', value: menuData.categories.length, icon: 'list_alt', color: 'text-purple-500' },
+    { label: 'Categorias', value: menuData?.categories?.length || 0, icon: 'list_alt', color: 'text-purple-500' },
   ];
 
   const copyLink = () => {
     navigator.clipboard.writeText(publicLink);
-    alert('Link oficial copiado para o WhatsApp!');
+    alert('Link do cardápio copiado!');
   };
 
   return (
@@ -79,7 +77,6 @@ const Dashboard: React.FC<Props> = ({ menuData, onEdit, onPreview, onTemplates }
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Ações de Edição */}
         <section className="space-y-4">
           <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest ml-2">Gerenciar Conteúdo</h3>
           <div className="grid grid-cols-2 gap-4">
@@ -98,7 +95,6 @@ const Dashboard: React.FC<Props> = ({ menuData, onEdit, onPreview, onTemplates }
           </div>
         </section>
 
-        {/* Dicas e Suporte */}
         <section className="space-y-4">
           <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest ml-2">Suporte ao Dono</h3>
           <div className="bg-white dark:bg-white/5 rounded-[2rem] p-8 border border-gray-100 dark:border-white/10 flex flex-col gap-6">

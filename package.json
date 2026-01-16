@@ -3,19 +3,22 @@
   "name": "menu-pro",
   "version": "1.0.0",
   "description": "Plataforma de criação de cardápios profissionais",
-  "main": "index.html",
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "stripe": "^14.0.0",
     "@google/genai": "^1.35.0",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "scripts": {
-    "start": "serve .",
-    "build": "mkdir -p public && cp index.html metadata.json public/ && cp index.tsx App.tsx types.ts constants.tsx geminiService.ts public/ && cp -r screens public/ 2>/dev/null || true"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
   }
 }
